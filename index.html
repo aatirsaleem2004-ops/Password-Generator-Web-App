@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passward Generator | Javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <div class="heading">
+        <h2>Muhammad Aatir Saleem</h2>
+    </div>
+    <div class="container">
+        <h1>Passward Generator</h1>
+        <div class="inputBox">
+            <input type="text" class="PassBox" id="PassBox" disabled>
+            <span class="material-symbols-outlined">
+            content_copy
+            </span>
+        </div>
+        <input type="range" min="1" max="30" value="8" id="inputSlider">
+        <div class="row">
+            <p>Passward lenght</p>
+            <span id="sliderValue"></span>
+        </div>
+        <div class="row">
+            <label for="LowerCase">Lower Case Letter (a to z)</label>
+            <input type="checkbox" name="LowerCase" id="LowerCase" checked>
+        </div>
+        <div class="row">
+            <label for="UpperCase">Upper Case Letter (A to Z)</label>
+            <input type="checkbox" name="UpperCase" id="UpperCase" checked>
+        </div>
+        <div class="row">
+            <label for="NumbersOnly">Numbers Only (0 to 9)</label>
+            <input type="checkbox" name="NumbersOnly" id="NumbersOnly" checked>
+        </div>
+        <div class="row">
+            <label for="Symbols">Only Symbols (@ # $ % &)</label>
+            <input type="checkbox" name="Symbols" id="Symbols" checked>
+        </div>
+        <button type="passward" class="genBtn" id="Generatebtn">Generate Passward</button>
+    </div>
+    
+    <script src="App.js"></script>
+</body>
+</html>
